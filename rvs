@@ -1,0 +1,19 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ser1.shuhari.local.	root.shuhari.local. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ser1.shuhari.local.
+@	IN	NS	shuhari.local.
+101	IN	PTR	rootca.shuhari.local.
+102	IN	PTR	subca.shuhari.local.
+103	IN	PTR	ser1.shuhari.local.
+103	IN	PTR	www.shuhari.local.
+103	IN	PTR	ns1.shuhari.local.
+
